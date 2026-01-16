@@ -7,7 +7,7 @@ export const projects = [
     description: "Mi primer proyecto usando React y TypeScript.",
     image: "",
     liveUrl: "https://ecommerce-frontend-liart-eta.vercel.app/",
-    repoUrl: "https://github.com/tuusuario/proyecto1",
+    repoUrl: "https://github.com/deiby14/ecommerce-frontend",
     techs: ["React", "TypeScript", "Vite"],
   },
 ];
