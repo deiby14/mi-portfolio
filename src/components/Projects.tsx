@@ -23,9 +23,6 @@ const Projects = () => {
               <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                 Ver demo
               </a>
-              <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
-                Código
-              </a>
             </div>
           </article>
         ))}
