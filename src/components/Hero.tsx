@@ -7,7 +7,7 @@ const Hero = () => {
         <h1>¡Bienvenido a mi Portfolio!</h1>
         <p>
           Este es mi portfolio donde puedo mostrar mis proyectos y habilidades
-          como desarrolladorrrr
+          como desarrollador
         </p>
         <button className="cta-button">Explorar mis proyectos</button>
       </div>

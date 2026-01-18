@@ -1,14 +1,10 @@
+import "./Projects.css";
 import { projects } from "../data/projects.data";
-
-// Forzar detección de cambios en el archivo
-const testChange = true;
 
 const Projects = () => {
   return (
     <section id="proyectos" className="projects">
-      <h2>Mis Proyetos</h2> 
-          
-
+      <h2>Mis Proyectos</h2>
       <div className="projects-grid">
         {projects.map((project) => (
           <article key={project.id} className="project-card">
@@ -20,9 +16,16 @@ const Projects = () => {
               ))}
             </ul>
             <div className="project-links">
-              <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                Ver demo
-              </a>
+              {project.liveUrl ? (
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  Ver demo
+                </a>
+              ) : null}
+              {project.repoUrl ? (
+                <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
+                  Ver código
+                </a>
+              ) : null}
             </div>
           </article>
         ))}
