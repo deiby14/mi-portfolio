@@ -1,87 +1,93 @@
 .projects {
-  padding: 4rem 1.5rem;
-  max-width: 1100px;
-  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
 }
 
 .projects h2 {
-  margin: 0 0 1.5rem;
-  font-size: 2rem;
-  line-height: 1.2;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #333;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-card {
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 14px;
-  padding: 1.25rem;
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .project-card h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
 }
 
 .project-card p {
-  margin: 0 0 1rem;
-  color: rgba(255, 255, 255, 0.78);
+  color: #666;
   line-height: 1.6;
+  margin-bottom: 1.5rem;
 }
 
 .project-techs {
-  margin: 0 0 1rem;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
 }
 
 .project-techs li {
-  font-size: 0.85rem;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .project-links {
   display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .project-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.55rem 0.9rem;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #1976d2;
+  color: white;
   text-decoration: none;
-  color: inherit;
-  background: rgba(255, 255, 255, 0.04);
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background 0.3s ease;
 }
 
 .project-links a:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #1565c0;
 }
 
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .projects {
     padding: 3rem 1rem;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
   }
 
   .projects-grid {
